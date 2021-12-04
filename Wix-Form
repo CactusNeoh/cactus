@@ -1,0 +1,14 @@
+import wixData from 'wix-data';
+
+$w.onReady(function () {
+	
+});
+
+export function button1_click(event) {
+	let c = {
+        'dn' : $w('#input1').value,
+        'dc' : $w('#input2').value,
+	}
+
+	wixData.insert('list',c) ; 
+}
